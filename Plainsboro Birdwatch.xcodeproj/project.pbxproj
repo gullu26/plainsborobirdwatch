@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E7B3E2B2208C4F700E8BC69 /* HomeTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B3E2A2208C4F700E8BC69 /* HomeTabsViewController.swift */; };
+		0E7B3E2D2208DA9300E8BC69 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B3E2C2208DA9300E8BC69 /* LogViewController.swift */; };
+		0EE1CB96220789300078B806 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE1CB95220789300078B806 /* SettingsViewController.swift */; };
+		0F314AA8612BF884BB3C8520 /* Pods_Plainsboro_BirdwatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEEF63020773F8477F432A9 /* Pods_Plainsboro_BirdwatchUITests.framework */; };
+		4312F7C7220722540031B2E9 /* UICustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4312F7C6220722540031B2E9 /* UICustomViews.swift */; };
+		436894A52206657C005DF8DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 436894A42206657C005DF8DA /* GoogleService-Info.plist */; };
+		43813AE821C087080086C528 /* OpenWeatherMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43813AE721C087080086C528 /* OpenWeatherMap.swift */; };
+		43813AEC21C0AA300086C528 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43813AEB21C0AA300086C528 /* WeatherForecast.swift */; };
+		43D2F83921BF07330021C141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F83821BF07330021C141 /* AppDelegate.swift */; };
+		43D2F83E21BF07330021C141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D2F83C21BF07330021C141 /* Main.storyboard */; };
+		43D2F84021BF07330021C141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D2F83F21BF07330021C141 /* Assets.xcassets */; };
+		43D2F84321BF07330021C141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D2F84121BF07330021C141 /* LaunchScreen.storyboard */; };
+		43D2F84E21BF07330021C141 /* Plainsboro_BirdwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F84D21BF07330021C141 /* Plainsboro_BirdwatchTests.swift */; };
+		43D2F85921BF07330021C141 /* Plainsboro_BirdwatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F85821BF07330021C141 /* Plainsboro_BirdwatchUITests.swift */; };
+		43D2F86721BF0AC70021C141 /* UIStudioExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F86621BF0AC70021C141 /* UIStudioExtension.swift */; };
+		43D2F86921BF2D8A0021C141 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F86821BF2D8A0021C141 /* HomeViewController.swift */; };
+		43D2F86B21BF2D970021C141 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F86A21BF2D970021C141 /* LoginViewController.swift */; };
+		43D2F86F21BF349B0021C141 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F86E21BF349B0021C141 /* AuthViewController.swift */; };
+		43D2F87121BF35200021C141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D2F87021BF35200021C141 /* ViewController.swift */; };
+		43D2F87521BF3D3B0021C141 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43D2F87421BF3D3B0021C141 /* GoogleService-Info.plist */; };
+		A67CB25EE82CEFD84616DFF9 /* Pods_Plainsboro_BirdwatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9E133712F322D83E66E8EA /* Pods_Plainsboro_BirdwatchTests.framework */; };
+		EF340399BC7B6696836D6AAC /* Pods_Plainsboro_Birdwatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B262E4032D247064B12B48B5 /* Pods_Plainsboro_Birdwatch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43D2F84A21BF07330021C141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43D2F82D21BF07330021C141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D2F83421BF07330021C141;
+			remoteInfo = "Plainsboro Birdwatch";
+		};
+		43D2F85521BF07330021C141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43D2F82D21BF07330021C141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D2F83421BF07330021C141;
+			remoteInfo = "Plainsboro Birdwatch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A42B5E14A9E583E07580183 /* Pods-Plainsboro BirdwatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plainsboro BirdwatchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plainsboro BirdwatchUITests/Pods-Plainsboro BirdwatchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0DB6CBBC8902F2F8BB1BF517 /* Pods-Plainsboro BirdwatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plainsboro BirdwatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plainsboro BirdwatchTests/Pods-Plainsboro BirdwatchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0E7B3E2A2208C4F700E8BC69 /* HomeTabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabsViewController.swift; sourceTree = "<group>"; };
+		0E7B3E2C2208DA9300E8BC69 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		0EE1CB95220789300078B806 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2AB060238A23497BAC0C60A9 /* Pods-Plainsboro Birdwatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plainsboro Birdwatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plainsboro Birdwatch/Pods-Plainsboro Birdwatch.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9E133712F322D83E66E8EA /* Pods_Plainsboro_BirdwatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plainsboro_BirdwatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4312F7C6220722540031B2E9 /* UICustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomViews.swift; sourceTree = "<group>"; };
+		436894A42206657C005DF8DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43813AE721C087080086C528 /* OpenWeatherMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMap.swift; sourceTree = "<group>"; };
+		43813AEB21C0AA300086C528 /* WeatherForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		43D2F83521BF07330021C141 /* Plainsboro Birdwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plainsboro Birdwatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D2F83821BF07330021C141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43D2F83D21BF07330021C141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43D2F83F21BF07330021C141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43D2F84221BF07330021C141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43D2F84421BF07330021C141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D2F84921BF07330021C141 /* Plainsboro BirdwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plainsboro BirdwatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D2F84D21BF07330021C141 /* Plainsboro_BirdwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plainsboro_BirdwatchTests.swift; sourceTree = "<group>"; };
+		43D2F84F21BF07330021C141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D2F85421BF07330021C141 /* Plainsboro BirdwatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plainsboro BirdwatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D2F85821BF07330021C141 /* Plainsboro_BirdwatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plainsboro_BirdwatchUITests.swift; sourceTree = "<group>"; };
+		43D2F85A21BF07340021C141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D2F86621BF0AC70021C141 /* UIStudioExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStudioExtension.swift; sourceTree = "<group>"; };
+		43D2F86821BF2D8A0021C141 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		43D2F86A21BF2D970021C141 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		43D2F86E21BF349B0021C141 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		43D2F87021BF35200021C141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43D2F87421BF3D3B0021C141 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43D2F87621BF3EDE0021C141 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Pods/FirebaseCore/README.md; sourceTree = "<group>"; };
+		43D2F8AA21BF44240021C141 /* Pods-Plainsboro BirdwatchUITests-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "Pods-Plainsboro BirdwatchUITests-frameworks.sh"; path = "Pods/Target Support Files/Pods-Plainsboro BirdwatchUITests/Pods-Plainsboro BirdwatchUITests-frameworks.sh"; sourceTree = "<group>"; };
+		43D2F8AC21BF4B510021C141 /* project.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = project.xcworkspace; path = "Plainsboro Birdwatch.xcodeproj/project.xcworkspace"; sourceTree = "<group>"; };
+		43D2F8AE21BF4BCB0021C141 /* FirebaseFirestore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = FirebaseFirestore.xcconfig; path = "Pods/Target Support Files/FirebaseFirestore/FirebaseFirestore.xcconfig"; sourceTree = "<group>"; };
+		4CEEF63020773F8477F432A9 /* Pods_Plainsboro_BirdwatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plainsboro_BirdwatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A003E4F91BB3435976C9AC3E /* Pods-Plainsboro BirdwatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plainsboro BirdwatchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plainsboro BirdwatchUITests/Pods-Plainsboro BirdwatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B262E4032D247064B12B48B5 /* Pods_Plainsboro_Birdwatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plainsboro_Birdwatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6B1703A352222B1668F6B1 /* Pods-Plainsboro Birdwatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plainsboro Birdwatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plainsboro Birdwatch/Pods-Plainsboro Birdwatch.release.xcconfig"; sourceTree = "<group>"; };
+		E84A3928B767B9B1EC507F2C /* Pods-Plainsboro BirdwatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plainsboro BirdwatchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plainsboro BirdwatchTests/Pods-Plainsboro BirdwatchTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43D2F83221BF07330021C141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF340399BC7B6696836D6AAC /* Pods_Plainsboro_Birdwatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D2F84621BF07330021C141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A67CB25EE82CEFD84616DFF9 /* Pods_Plainsboro_BirdwatchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D2F85121BF07330021C141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F314AA8612BF884BB3C8520 /* Pods_Plainsboro_BirdwatchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43D2F82C21BF07330021C141 = {
+			isa = PBXGroup;
+			children = (
+				43D2F83721BF07330021C141 /* Plainsboro Birdwatch */,
+				43D2F84C21BF07330021C141 /* Plainsboro BirdwatchTests */,
+				43D2F85721BF07330021C141 /* Plainsboro BirdwatchUITests */,
+				43D2F83621BF07330021C141 /* Products */,
+				FC29F161A3119ED32C7A8A3A /* Frameworks */,
+				C5D3E2E8A68B01F9846DE643 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		43D2F83621BF07330021C141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F83521BF07330021C141 /* Plainsboro Birdwatch.app */,
+				43D2F84921BF07330021C141 /* Plainsboro BirdwatchTests.xctest */,
+				43D2F85421BF07330021C141 /* Plainsboro BirdwatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43D2F83721BF07330021C141 /* Plainsboro Birdwatch */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F87421BF3D3B0021C141 /* GoogleService-Info.plist */,
+				436894A42206657C005DF8DA /* GoogleService-Info.plist */,
+				43D2F87021BF35200021C141 /* ViewController.swift */,
+				43D2F86621BF0AC70021C141 /* UIStudioExtension.swift */,
+				43D2F83821BF07330021C141 /* AppDelegate.swift */,
+				43D2F86A21BF2D970021C141 /* LoginViewController.swift */,
+				43D2F83C21BF07330021C141 /* Main.storyboard */,
+				43D2F86821BF2D8A0021C141 /* HomeViewController.swift */,
+				43D2F86E21BF349B0021C141 /* AuthViewController.swift */,
+				43D2F83F21BF07330021C141 /* Assets.xcassets */,
+				43D2F84121BF07330021C141 /* LaunchScreen.storyboard */,
+				43D2F84421BF07330021C141 /* Info.plist */,
+				43813AEB21C0AA300086C528 /* WeatherForecast.swift */,
+				43813AE721C087080086C528 /* OpenWeatherMap.swift */,
+				4312F7C6220722540031B2E9 /* UICustomViews.swift */,
+				0EE1CB95220789300078B806 /* SettingsViewController.swift */,
+				0E7B3E2A2208C4F700E8BC69 /* HomeTabsViewController.swift */,
+				0E7B3E2C2208DA9300E8BC69 /* LogViewController.swift */,
+			);
+			path = "Plainsboro Birdwatch";
+			sourceTree = "<group>";
+		};
+		43D2F84C21BF07330021C141 /* Plainsboro BirdwatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F84D21BF07330021C141 /* Plainsboro_BirdwatchTests.swift */,
+				43D2F84F21BF07330021C141 /* Info.plist */,
+			);
+			path = "Plainsboro BirdwatchTests";
+			sourceTree = "<group>";
+		};
+		43D2F85721BF07330021C141 /* Plainsboro BirdwatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F85821BF07330021C141 /* Plainsboro_BirdwatchUITests.swift */,
+				43D2F85A21BF07340021C141 /* Info.plist */,
+			);
+			path = "Plainsboro BirdwatchUITests";
+			sourceTree = "<group>";
+		};
+		C5D3E2E8A68B01F9846DE643 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AB060238A23497BAC0C60A9 /* Pods-Plainsboro Birdwatch.debug.xcconfig */,
+				DF6B1703A352222B1668F6B1 /* Pods-Plainsboro Birdwatch.release.xcconfig */,
+				0DB6CBBC8902F2F8BB1BF517 /* Pods-Plainsboro BirdwatchTests.debug.xcconfig */,
+				E84A3928B767B9B1EC507F2C /* Pods-Plainsboro BirdwatchTests.release.xcconfig */,
+				A003E4F91BB3435976C9AC3E /* Pods-Plainsboro BirdwatchUITests.debug.xcconfig */,
+				0A42B5E14A9E583E07580183 /* Pods-Plainsboro BirdwatchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC29F161A3119ED32C7A8A3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43D2F8AE21BF4BCB0021C141 /* FirebaseFirestore.xcconfig */,
+				43D2F8AC21BF4B510021C141 /* project.xcworkspace */,
+				43D2F8AA21BF44240021C141 /* Pods-Plainsboro BirdwatchUITests-frameworks.sh */,
+				43D2F87621BF3EDE0021C141 /* README.md */,
+				B262E4032D247064B12B48B5 /* Pods_Plainsboro_Birdwatch.framework */,
+				2D9E133712F322D83E66E8EA /* Pods_Plainsboro_BirdwatchTests.framework */,
+				4CEEF63020773F8477F432A9 /* Pods_Plainsboro_BirdwatchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43D2F83421BF07330021C141 /* Plainsboro Birdwatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D2F85D21BF07340021C141 /* Build configuration list for PBXNativeTarget "Plainsboro Birdwatch" */;
+			buildPhases = (
+				389F9E357BF2D849A88B2265 /* [CP] Check Pods Manifest.lock */,
+				43D2F83121BF07330021C141 /* Sources */,
+				43D2F83221BF07330021C141 /* Frameworks */,
+				43D2F83321BF07330021C141 /* Resources */,
+				DF00366AF3B4E30176BCE964 /* [CP] Embed Pods Frameworks */,
+				EA28B264DCAF9C169DB7EDFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Plainsboro Birdwatch";
+			productName = "Plainsboro Birdwatch";
+			productReference = 43D2F83521BF07330021C141 /* Plainsboro Birdwatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43D2F84821BF07330021C141 /* Plainsboro BirdwatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D2F86021BF07340021C141 /* Build configuration list for PBXNativeTarget "Plainsboro BirdwatchTests" */;
+			buildPhases = (
+				2E188915C3408A6860538E77 /* [CP] Check Pods Manifest.lock */,
+				43D2F84521BF07330021C141 /* Sources */,
+				43D2F84621BF07330021C141 /* Frameworks */,
+				43D2F84721BF07330021C141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43D2F84B21BF07330021C141 /* PBXTargetDependency */,
+			);
+			name = "Plainsboro BirdwatchTests";
+			productName = "Plainsboro BirdwatchTests";
+			productReference = 43D2F84921BF07330021C141 /* Plainsboro BirdwatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43D2F85321BF07330021C141 /* Plainsboro BirdwatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D2F86321BF07340021C141 /* Build configuration list for PBXNativeTarget "Plainsboro BirdwatchUITests" */;
+			buildPhases = (
+				82539449FD50CAEC3E4BF8B8 /* [CP] Check Pods Manifest.lock */,
+				43D2F85021BF07330021C141 /* Sources */,
+				43D2F85121BF07330021C141 /* Frameworks */,
+				43D2F85221BF07330021C141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43D2F85621BF07330021C141 /* PBXTargetDependency */,
+			);
+			name = "Plainsboro BirdwatchUITests";
+			productName = "Plainsboro BirdwatchUITests";
+			productReference = 43D2F85421BF07330021C141 /* Plainsboro BirdwatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43D2F82D21BF07330021C141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Avyay's Apps";
+				TargetAttributes = {
+					43D2F83421BF07330021C141 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					43D2F84821BF07330021C141 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 43D2F83421BF07330021C141;
+					};
+					43D2F85321BF07330021C141 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 43D2F83421BF07330021C141;
+					};
+				};
+			};
+			buildConfigurationList = 43D2F83021BF07330021C141 /* Build configuration list for PBXProject "Plainsboro Birdwatch" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43D2F82C21BF07330021C141;
+			productRefGroup = 43D2F83621BF07330021C141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43D2F83421BF07330021C141 /* Plainsboro Birdwatch */,
+				43D2F84821BF07330021C141 /* Plainsboro BirdwatchTests */,
+				43D2F85321BF07330021C141 /* Plainsboro BirdwatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43D2F83321BF07330021C141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D2F84321BF07330021C141 /* LaunchScreen.storyboard in Resources */,
+				43D2F87521BF3D3B0021C141 /* GoogleService-Info.plist in Resources */,
+				436894A52206657C005DF8DA /* GoogleService-Info.plist in Resources */,
+				43D2F84021BF07330021C141 /* Assets.xcassets in Resources */,
+				43D2F83E21BF07330021C141 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D2F84721BF07330021C141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D2F85221BF07330021C141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E188915C3408A6860538E77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plainsboro BirdwatchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		389F9E357BF2D849A88B2265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plainsboro Birdwatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82539449FD50CAEC3E4BF8B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plainsboro BirdwatchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF00366AF3B4E30176BCE964 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Plainsboro Birdwatch/Pods-Plainsboro Birdwatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plainsboro Birdwatch/Pods-Plainsboro Birdwatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA28B264DCAF9C169DB7EDFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Plainsboro Birdwatch/Pods-Plainsboro Birdwatch-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plainsboro Birdwatch/Pods-Plainsboro Birdwatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43D2F83121BF07330021C141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E7B3E2B2208C4F700E8BC69 /* HomeTabsViewController.swift in Sources */,
+				4312F7C7220722540031B2E9 /* UICustomViews.swift in Sources */,
+				43D2F87121BF35200021C141 /* ViewController.swift in Sources */,
+				0E7B3E2D2208DA9300E8BC69 /* LogViewController.swift in Sources */,
+				43D2F83921BF07330021C141 /* AppDelegate.swift in Sources */,
+				0EE1CB96220789300078B806 /* SettingsViewController.swift in Sources */,
+				43D2F86721BF0AC70021C141 /* UIStudioExtension.swift in Sources */,
+				43D2F86F21BF349B0021C141 /* AuthViewController.swift in Sources */,
+				43813AE821C087080086C528 /* OpenWeatherMap.swift in Sources */,
+				43D2F86B21BF2D970021C141 /* LoginViewController.swift in Sources */,
+				43D2F86921BF2D8A0021C141 /* HomeViewController.swift in Sources */,
+				43813AEC21C0AA300086C528 /* WeatherForecast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D2F84521BF07330021C141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D2F84E21BF07330021C141 /* Plainsboro_BirdwatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D2F85021BF07330021C141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D2F85921BF07330021C141 /* Plainsboro_BirdwatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43D2F84B21BF07330021C141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D2F83421BF07330021C141 /* Plainsboro Birdwatch */;
+			targetProxy = 43D2F84A21BF07330021C141 /* PBXContainerItemProxy */;
+		};
+		43D2F85621BF07330021C141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D2F83421BF07330021C141 /* Plainsboro Birdwatch */;
+			targetProxy = 43D2F85521BF07330021C141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43D2F83C21BF07330021C141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D2F83D21BF07330021C141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43D2F84121BF07330021C141 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D2F84221BF07330021C141 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43D2F85B21BF07340021C141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43D2F85C21BF07340021C141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43D2F85E21BF07340021C141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB060238A23497BAC0C60A9 /* Pods-Plainsboro Birdwatch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M5WBF6644;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+				);
+				INFOPLIST_FILE = "Plainsboro Birdwatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avyayapps.plainsborobwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43D2F85F21BF07340021C141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6B1703A352222B1668F6B1 /* Pods-Plainsboro Birdwatch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M5WBF6644;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+				);
+				INFOPLIST_FILE = "Plainsboro Birdwatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avyayapps.plainsborobwatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43D2F86121BF07340021C141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB6CBBC8902F2F8BB1BF517 /* Pods-Plainsboro BirdwatchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M5WBF6644;
+				INFOPLIST_FILE = "Plainsboro BirdwatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avyayapps.Plainsboro-BirdwatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plainsboro Birdwatch.app/Plainsboro Birdwatch";
+			};
+			name = Debug;
+		};
+		43D2F86221BF07340021C141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84A3928B767B9B1EC507F2C /* Pods-Plainsboro BirdwatchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M5WBF6644;
+				INFOPLIST_FILE = "Plainsboro BirdwatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avyayapps.Plainsboro-BirdwatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plainsboro Birdwatch.app/Plainsboro Birdwatch";
+			};
+			name = Release;
+		};
+		43D2F86421BF07340021C141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A003E4F91BB3435976C9AC3E /* Pods-Plainsboro BirdwatchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M5WBF6644;
+				INFOPLIST_FILE = "Plainsboro BirdwatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avyayapps.Plainsboro-BirdwatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Plainsboro Birdwatch";
+			};
+			name = Debug;
+		};
+		43D2F86521BF07340021C141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A42B5E14A9E583E07580183 /* Pods-Plainsboro BirdwatchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7M5WBF6644;
+				INFOPLIST_FILE = "Plainsboro BirdwatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avyayapps.Plainsboro-BirdwatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Plainsboro Birdwatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43D2F83021BF07330021C141 /* Build configuration list for PBXProject "Plainsboro Birdwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D2F85B21BF07340021C141 /* Debug */,
+				43D2F85C21BF07340021C141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D2F85D21BF07340021C141 /* Build configuration list for PBXNativeTarget "Plainsboro Birdwatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D2F85E21BF07340021C141 /* Debug */,
+				43D2F85F21BF07340021C141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D2F86021BF07340021C141 /* Build configuration list for PBXNativeTarget "Plainsboro BirdwatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D2F86121BF07340021C141 /* Debug */,
+				43D2F86221BF07340021C141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D2F86321BF07340021C141 /* Build configuration list for PBXNativeTarget "Plainsboro BirdwatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D2F86421BF07340021C141 /* Debug */,
+				43D2F86521BF07340021C141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43D2F82D21BF07330021C141 /* Project object */;
+}
