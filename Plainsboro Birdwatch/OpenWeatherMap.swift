@@ -42,6 +42,39 @@ enum OpenWeatherMap {
         task.resume();
     }
     
+    static func get(cityCode: Int, callback: @escaping (WeatherForecast) -> Void) {
+
+        let url: URL! = URL(string: "http://api.openweathermap.org/data/2.5/weather?id=\(cityCode)&units=imperial,us&APPID=40e95f00517dc507947dce2b6f96626a");
+
+        
+        var HTTPRequest: URLRequest! = URLRequest(url: url);
+        HTTPRequest.httpMethod = "GET";
+        
+        let task = URLSession.shared.dataTask(with: HTTPRequest, completionHandler: {
+            (data, headers, error) in
+            guard let response = data, error == nil else {
+                print("ERROR: \(String(describing: error))")
+                callback(WeatherForecast())
+                return
+            }
+            
+            if let httpFormattedHeaders = headers as? HTTPURLResponse, httpFormattedHeaders.statusCode != 200 {
+                callback(WeatherForecast())
+                return
+            } else {
+                var jsonData: [String: Any] = self.parse(data: response);
+                if (jsonData["error"] == nil) {
+                    callback(WeatherForecast(json: jsonData))
+                } else {
+                    callback(WeatherForecast())
+                }
+            }
+        });
+        
+        task.resume();
+    }
+    
+    
     static func parse(data: Data) -> [String: Any] {
         guard let jsonDecodedData = try?
             JSONSerialization.jsonObject(with: data, options: []) else {
