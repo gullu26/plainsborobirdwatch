@@ -173,7 +173,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="°F" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-Tu-znL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="°F" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-Tu-znL">
                                 <rect key="frame" x="272" y="151" width="87" height="30"/>
                                 <color key="backgroundColor" red="0.91731148959999997" green="0.89861220119999996" blue="0.86274105310000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
