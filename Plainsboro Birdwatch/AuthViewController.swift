@@ -27,19 +27,25 @@ class AuthViewController: ViewController {
         radialLoader.startAnimating();
         let db = Firestore.firestore();
         db.collection("users").document(userID).getDocument(source: FirestoreSource.default, completion: { (snap, err) in
-                if (snap!.exists) { //if user id exists and can move on
+                if (snap==nil)
+                {
+                    userID = "N/A";
+                    self.reject(message : "Please connect to the internet and try again.");
+                }
+                else if (snap!.exists) { //if user id exists and can move on
                     
                     //save the username to UserDefaults so it will load again later
                     
                     let preferences = UserDefaults.standard
-                    preferences.set(userID, forKey: self.USER_ID_KEY)
+                    //preferences.set(userID, forKey: self.USER_ID_KEY)
+                    
                     
                     
                     self.radialLoader.stopAnimating();
                     self.performSegue(withIdentifier: "loadHomeScreen", sender: self);
                 } else {
                     userID = "N/A";
-                    self.reject();
+                    self.reject(message : "We could not recognize the user ID you entered.");
                 }
             }
         );
@@ -50,8 +56,8 @@ class AuthViewController: ViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func reject() {
-        let alert: UIAlertController! = UIAlertController(title: "Sorry", message: "We could not recognize the user ID you entered.", preferredStyle: .alert);
+    func reject(message : String) {
+        let alert: UIAlertController! = UIAlertController(title: "Sorry", message: message, preferredStyle: .alert);
         let alertAction = UIAlertAction(title: "Go Back", style: UIAlertActionStyle.default, handler: { action in
             self.performSegue(withIdentifier: "rejectedAuthentication", sender: self)
         });

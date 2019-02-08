@@ -317,6 +317,7 @@
         <image name="wind" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="iFW-hd-cEv"/>
         <segue reference="ckv-ov-44o"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10291796177625656" green="0.23578894138336182" blue="0.19999688863754272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -68,10 +68,11 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         OpenWeatherMap.get(cityCode: cityCode, callback: {
         //OpenWeatherMap.get(latitude: latitude, longitude: longitude, callback: {
             forecast in
-            print("Date: \(forecast.date)\nTemperature: \(forecast.temperature)\nDesc: \(forecast.description)");
+            //print("Date: \(forecast.date)\nTemperature: \(forecast.temperature)\nDesc: \(forecast.description)");
+            let temperature : Int = forecast.temperature ?? 1
             
             DispatchQueue.main.async {
-                self.tempText.text = String(forecast.temperature);
+                self.tempText.text = String(temperature);
             }
 
         });
