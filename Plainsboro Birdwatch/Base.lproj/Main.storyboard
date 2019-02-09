@@ -137,7 +137,7 @@
                                     <constraint firstAttribute="width" secondItem="7IU-4X-W4b" secondAttribute="height" multiplier="1:1" id="tRx-D3-yII"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer" translatesAutoresizingMaskIntoConstraints="NO" id="Mke-J0-41n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear" translatesAutoresizingMaskIntoConstraints="NO" id="Mke-J0-41n">
                                 <rect key="frame" x="16" y="414" width="125" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mke-J0-41n" secondAttribute="height" multiplier="1:1" id="CY8-GH-HzW"/>
@@ -226,6 +226,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="2DE-Px-y5N" userLabel="Home" customClass="MenuButton" customModule="Plainsboro_Birdwatch" customModuleProvider="target"/>
                     <connections>
+                        <outlet property="conditionImage" destination="Mke-J0-41n" id="xpp-l6-zaJ"/>
                         <outlet property="conditionText" destination="Sh3-Hb-fdO" id="K21-Iz-AUU"/>
                         <outlet property="dateText" destination="d97-IQ-dyN" id="pcr-Tx-XqJ"/>
                         <outlet property="letsGoButton" destination="OM1-Dr-UGe" id="MfB-RK-mBv"/>
@@ -313,11 +314,11 @@
         <image name="HomeIcon" width="25" height="25"/>
         <image name="LogIcon" width="25" height="25"/>
         <image name="SettingsIcon" width="25" height="25"/>
+        <image name="clear" width="50" height="50"/>
         <image name="thermometer" width="120" height="120"/>
         <image name="wind" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iFW-hd-cEv"/>
         <segue reference="ckv-ov-44o"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10291796177625656" green="0.23578894138336182" blue="0.19999688863754272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

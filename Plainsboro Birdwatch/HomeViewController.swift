@@ -44,6 +44,9 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var unitsText: UITextView!
     
+    @IBOutlet weak var conditionImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad();
         
@@ -69,11 +72,26 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         //OpenWeatherMap.get(latitude: latitude, longitude: longitude, callback: {
             forecast in
             //print("Date: \(forecast.date)\nTemperature: \(forecast.temperature)\nDesc: \(forecast.description)");
-            let temperature : Int = forecast.temperature ?? 1
+            let temperature : Int = forecast.fahrenheit ?? 0
             
             DispatchQueue.main.async {
                 self.tempText.text = String(temperature);
             }
+            
+            let condition : String = forecast.condition ?? "Error"
+            
+            DispatchQueue.main.async {
+                self.conditionText.text = condition;
+                self.updateConditionPicture(conditionName: condition)
+            }
+            
+            let wind : String = forecast.wind ?? "Error"
+            
+            DispatchQueue.main.async {
+                self.windText.text = String(wind);
+            }
+            
+            
 
         });
         
@@ -82,6 +100,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         // Do any additional setup after loading the view.
     }
+    
+
     
     func increaseTextSizes()
     {
@@ -168,6 +188,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if (pickerView.tag == CONDITION_TAG)
         {
             conditionText.text=conditionList[row]
+            updateConditionPicture(conditionName : conditionList[row])
         }
         else if(pickerView.tag == WIND_TAG)
         {
@@ -193,6 +214,13 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @objc func dismissKeyboard ()
     {
         view.endEditing(true)
+    }
+    
+    
+    func updateConditionPicture(conditionName : String)
+    {
+        var conditionLowercase = conditionName.lowercased()
+        conditionImage.image = UIImage.init(named: conditionLowercase)
     }
     
     

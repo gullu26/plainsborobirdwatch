@@ -37,7 +37,7 @@ class AuthViewController: ViewController {
                     //save the username to UserDefaults so it will load again later
                     
                     let preferences = UserDefaults.standard
-                    //preferences.set(userID, forKey: self.USER_ID_KEY)
+                    preferences.set(userID, forKey: self.USER_ID_KEY)
                     
                     
                     
