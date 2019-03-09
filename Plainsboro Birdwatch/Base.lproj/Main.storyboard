@@ -117,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="February 4, 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d97-IQ-dyN">
-                                <rect key="frame" x="16" y="28" width="337" height="73"/>
+                                <rect key="frame" x="16" y="72" width="337" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="d97-IQ-dyN" secondAttribute="height" multiplier="337:90" constant="63.655555555555566" id="Ak3-x0-trX"/>
                                 </constraints>
@@ -126,19 +126,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind" translatesAutoresizingMaskIntoConstraints="NO" id="aTp-DF-oXh">
-                                <rect key="frame" x="16" y="260" width="128" height="128"/>
+                                <rect key="frame" x="16" y="289.5" width="113.5" height="113"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aTp-DF-oXh" secondAttribute="height" multiplier="1:1" id="4LA-Lh-bMZ"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer" translatesAutoresizingMaskIntoConstraints="NO" id="7IU-4X-W4b">
-                                <rect key="frame" x="16" y="109" width="128" height="128"/>
+                                <rect key="frame" x="16" y="153" width="113.5" height="113.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7IU-4X-W4b" secondAttribute="height" multiplier="1:1" id="tRx-D3-yII"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear" translatesAutoresizingMaskIntoConstraints="NO" id="Mke-J0-41n">
-                                <rect key="frame" x="16" y="414" width="125" height="125"/>
+                                <rect key="frame" x="16" y="428.5" width="110.5" height="110.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mke-J0-41n" secondAttribute="height" multiplier="1:1" id="CY8-GH-HzW"/>
                                 </constraints>
@@ -153,28 +153,29 @@
                                 <state key="normal" title="Let's Go!"/>
                                 <connections>
                                     <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HhY-gx-358"/>
+                                    <action selector="letsGo:" destination="zba-mg-yRm" eventType="touchUpInside" id="ad1-Xh-eYY"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srx-fr-fiA">
-                                <rect key="frame" x="172" y="158" width="89" height="30"/>
+                                <rect key="frame" x="157.5" y="194.5" width="103.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-D6-4I5">
-                                <rect key="frame" x="171" y="309" width="180" height="30"/>
+                                <rect key="frame" x="156.5" y="331" width="194.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sh3-Hb-fdO">
-                                <rect key="frame" x="170" y="461.5" width="180" height="30"/>
+                                <rect key="frame" x="155.5" y="469" width="194.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="°F" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-Tu-znL">
-                                <rect key="frame" x="272" y="151" width="87" height="30"/>
+                                <rect key="frame" x="272" y="187.5" width="87" height="30"/>
                                 <color key="backgroundColor" red="0.91731148959999997" green="0.89861220119999996" blue="0.86274105310000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="KwK-Yt-31M"/>
@@ -229,15 +230,94 @@
                         <outlet property="conditionImage" destination="Mke-J0-41n" id="xpp-l6-zaJ"/>
                         <outlet property="conditionText" destination="Sh3-Hb-fdO" id="K21-Iz-AUU"/>
                         <outlet property="dateText" destination="d97-IQ-dyN" id="pcr-Tx-XqJ"/>
-                        <outlet property="letsGoButton" destination="OM1-Dr-UGe" id="MfB-RK-mBv"/>
                         <outlet property="tempText" destination="Srx-fr-fiA" id="oAk-bV-cod"/>
                         <outlet property="unitsText" destination="Nok-Tu-znL" id="OlF-C3-PKj"/>
                         <outlet property="windText" destination="MF1-D6-4I5" id="cDt-YT-ilD"/>
+                        <segue destination="kce-rb-VIg" kind="show" identifier="segue" id="x8Q-Rq-JZw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IY6-k0-F9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3416.8000000000002" y="-785.75712143928047"/>
+        </scene>
+        <!--Logging Session-->
+        <scene sceneID="YdI-Of-p5Q">
+            <objects>
+                <tableViewController id="kce-rb-VIg" customClass="CreateEntriesTableViewController" customModule="Plainsboro_Birdwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RLH-yj-Acg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WCj-53-AmQ">
+                            <rect key="frame" x="0.0" y="128" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Finish Logging"/>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BirdBoxTableViewCell" rowHeight="100" id="CaB-In-k6h" customClass="BirdBoxTableViewCell" customModule="Plainsboro_Birdwatch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CaB-In-k6h" id="2WS-Jx-8tz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box 27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIr-ur-Sud">
+                                            <rect key="frame" x="124" y="11" width="226" height="49"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Sparrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZO-ff-QPv">
+                                            <rect key="frame" x="124" y="58" width="235" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird" translatesAutoresizingMaskIntoConstraints="NO" id="TBM-mf-Qqr">
+                                            <rect key="frame" x="16" y="12.5" width="100" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="3xE-tR-18H"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TBM-mf-Qqr" firstAttribute="leading" secondItem="2WS-Jx-8tz" secondAttribute="leadingMargin" id="0nR-sq-eaY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="OZO-ff-QPv" secondAttribute="bottom" constant="10" id="1pj-kR-nMX"/>
+                                        <constraint firstItem="TBM-mf-Qqr" firstAttribute="centerY" secondItem="2WS-Jx-8tz" secondAttribute="centerY" id="2tp-TF-50b"/>
+                                        <constraint firstItem="WIr-ur-Sud" firstAttribute="leading" secondItem="TBM-mf-Qqr" secondAttribute="trailing" constant="8" symbolic="YES" id="3Wt-5j-MHO"/>
+                                        <constraint firstItem="OZO-ff-QPv" firstAttribute="trailing" secondItem="2WS-Jx-8tz" secondAttribute="trailingMargin" id="3rA-me-Oa2"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="WIr-ur-Sud" secondAttribute="bottom" constant="29" id="4zJ-2J-pFg"/>
+                                        <constraint firstItem="TBM-mf-Qqr" firstAttribute="height" secondItem="2WS-Jx-8tz" secondAttribute="height" constant="-24.5" id="CxZ-zd-q58"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="WIr-ur-Sud" secondAttribute="trailing" constant="9" id="LSQ-9p-a2I"/>
+                                        <constraint firstItem="WIr-ur-Sud" firstAttribute="top" secondItem="2WS-Jx-8tz" secondAttribute="topMargin" id="SXx-BL-tqj"/>
+                                        <constraint firstItem="OZO-ff-QPv" firstAttribute="top" secondItem="2WS-Jx-8tz" secondAttribute="topMargin" constant="47" id="eTk-L2-S0w"/>
+                                        <constraint firstItem="OZO-ff-QPv" firstAttribute="leading" secondItem="TBM-mf-Qqr" secondAttribute="trailing" constant="8" symbolic="YES" id="ors-UP-Ack"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="birdImageView" destination="TBM-mf-Qqr" id="0mR-4Y-L1D"/>
+                                    <outlet property="birdNameLabel" destination="OZO-ff-QPv" id="jWq-Cm-NBe"/>
+                                    <outlet property="boxNumberLabel" destination="WIr-ur-Sud" id="ti8-45-4pP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kce-rb-VIg" id="a78-6d-wg2"/>
+                            <outlet property="delegate" destination="kce-rb-VIg" id="XCp-hz-P8V"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Logging Session" id="ako-2R-Ljg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eCt-L0-4h4"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Vvv-wv-zgc">
+                            <connections>
+                                <segue destination="zJl-zj-Ta2" kind="show" id="RRO-bu-IdX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8S-YC-DUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4240.8000000000002" y="-786.65667166416802"/>
         </scene>
         <!--Home Tabs View Controller-->
         <scene sceneID="Vos-UP-ita">
@@ -309,17 +389,222 @@
             </objects>
             <point key="canvasLocation" x="8.8000000000000007" y="-57.121439280359823"/>
         </scene>
+        <!--New Box-->
+        <scene sceneID="VVd-P3-hYD">
+            <objects>
+                <viewController id="zJl-zj-Ta2" customClass="CreateBoxEntryViewController" customModule="Plainsboro_Birdwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oc9-kn-fQu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird" translatesAutoresizingMaskIntoConstraints="NO" id="utC-CG-joq">
+                                <rect key="frame" x="16" y="154" width="150" height="133.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fiF-BY-Zdc">
+                                <rect key="frame" x="16" y="308" width="343" height="340"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNG-kC-kJv" customClass="SkyFloatingLabelTextField" customModule="Plainsboro_Birdwatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="66.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKA-Xc-A7N" customClass="SkyFloatingLabelTextField" customModule="Plainsboro_Birdwatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="91.5" width="343" height="66"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xak-1o-0m5" customClass="SkyFloatingLabelTextField" customModule="Plainsboro_Birdwatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="182.5" width="343" height="66.5"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHL-LM-ptA" customClass="SkyFloatingLabelTextField" customModule="Plainsboro_Birdwatch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="274" width="343" height="66"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XHL-LM-ptA" firstAttribute="height" secondItem="kNG-kC-kJv" secondAttribute="height" id="bII-za-JZg"/>
+                                    <constraint firstItem="WKA-Xc-A7N" firstAttribute="height" secondItem="kNG-kC-kJv" secondAttribute="height" id="iIY-53-gka"/>
+                                    <constraint firstItem="Xak-1o-0m5" firstAttribute="height" secondItem="kNG-kC-kJv" secondAttribute="height" id="yzE-yM-C0e"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bGw-UY-RZi">
+                                <rect key="frame" x="127" y="81" width="121.5" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-RD-xZ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="aUS-K9-mG3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="46" translatesAutoresizingMaskIntoConstraints="NO" id="LJl-kD-1VI">
+                                        <rect key="frame" x="90.5" y="0.0" width="31" height="57"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-6m-Bb3">
+                                <rect key="frame" x="313" y="195" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1pt-7k-gb5"/>
+                                    <constraint firstAttribute="width" secondItem="JyP-6m-Bb3" secondAttribute="height" multiplier="1:1" id="Mpr-h7-ZoH"/>
+                                    <constraint firstAttribute="width" constant="50" id="PCs-VB-iae"/>
+                                </constraints>
+                                <state key="normal" image="search"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="zJl-zj-Ta2" eventType="touchUpInside" id="2iG-44-O7M"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="98Q-fX-g9i">
+                                <rect key="frame" x="166" y="182" width="149" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91731148959999997" green="0.89861220119999996" blue="0.86274105310000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bGw-UY-RZi" firstAttribute="top" secondItem="eqm-6l-SPI" secondAttribute="top" priority="900" constant="17" id="1sT-Jn-wr9"/>
+                            <constraint firstItem="JyP-6m-Bb3" firstAttribute="leading" secondItem="98Q-fX-g9i" secondAttribute="trailing" constant="-2" id="5g6-pn-2h8"/>
+                            <constraint firstItem="utC-CG-joq" firstAttribute="top" secondItem="bGw-UY-RZi" secondAttribute="bottom" priority="900" constant="16" id="6nc-y2-v6V"/>
+                            <constraint firstItem="eqm-6l-SPI" firstAttribute="trailing" secondItem="fiF-BY-Zdc" secondAttribute="trailing" priority="900" constant="16" id="ANX-p9-3Ns"/>
+                            <constraint firstItem="utC-CG-joq" firstAttribute="leading" secondItem="eqm-6l-SPI" secondAttribute="leading" constant="16" id="AmS-bh-Kgj"/>
+                            <constraint firstItem="bGw-UY-RZi" firstAttribute="centerX" secondItem="eqm-6l-SPI" secondAttribute="centerX" priority="900" id="CUO-A4-9hl"/>
+                            <constraint firstItem="JyP-6m-Bb3" firstAttribute="centerY" secondItem="98Q-fX-g9i" secondAttribute="centerY" id="Cdt-6m-G6G"/>
+                            <constraint firstItem="eqm-6l-SPI" firstAttribute="trailing" secondItem="JyP-6m-Bb3" secondAttribute="trailing" constant="12" id="DDx-Zb-Gsy"/>
+                            <constraint firstItem="utC-CG-joq" firstAttribute="height" secondItem="oc9-kn-fQu" secondAttribute="height" multiplier="0.2" id="Djo-00-hMJ"/>
+                            <constraint firstItem="JyP-6m-Bb3" firstAttribute="top" secondItem="eqm-6l-SPI" secondAttribute="top" constant="131" id="EHp-og-CFO"/>
+                            <constraint firstItem="JyP-6m-Bb3" firstAttribute="leading" secondItem="98Q-fX-g9i" secondAttribute="trailing" constant="-2" id="KGr-M2-u9d"/>
+                            <constraint firstItem="eqm-6l-SPI" firstAttribute="bottom" secondItem="fiF-BY-Zdc" secondAttribute="bottom" constant="19" id="PCU-lv-Gwb"/>
+                            <constraint firstItem="98Q-fX-g9i" firstAttribute="leading" secondItem="utC-CG-joq" secondAttribute="trailing" id="TB1-yo-eTl"/>
+                            <constraint firstItem="98Q-fX-g9i" firstAttribute="top" secondItem="bGw-UY-RZi" secondAttribute="bottom" constant="44" id="ZRR-pi-Gxh"/>
+                            <constraint firstItem="fiF-BY-Zdc" firstAttribute="top" secondItem="98Q-fX-g9i" secondAttribute="bottom" constant="50" id="gbQ-b1-tQD"/>
+                            <constraint firstItem="utC-CG-joq" firstAttribute="width" secondItem="oc9-kn-fQu" secondAttribute="width" multiplier="0.4" id="hCX-2K-PHU"/>
+                            <constraint firstItem="fiF-BY-Zdc" firstAttribute="top" secondItem="JyP-6m-Bb3" secondAttribute="bottom" constant="63" id="mHc-hW-JdR"/>
+                            <constraint firstItem="fiF-BY-Zdc" firstAttribute="top" secondItem="utC-CG-joq" secondAttribute="bottom" priority="900" constant="20" id="q3A-bl-4ZL"/>
+                            <constraint firstItem="utC-CG-joq" firstAttribute="top" secondItem="bGw-UY-RZi" secondAttribute="bottom" constant="16" id="tD2-Lg-iGB"/>
+                            <constraint firstItem="fiF-BY-Zdc" firstAttribute="leading" secondItem="eqm-6l-SPI" secondAttribute="leading" priority="900" constant="16" id="wxN-R3-IND"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eqm-6l-SPI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Box" id="IaM-GF-Imo">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="urF-RP-LfW">
+                            <connections>
+                                <segue destination="7zE-yS-0jg" kind="unwind" identifier="unwindCancel" unwindAction="unwindToEntriesTable:" id="KLT-UL-MyZ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="5nZ-Wb-XLr">
+                            <connections>
+                                <segue destination="7zE-yS-0jg" kind="unwind" identifier="unwindDone" unwindAction="unwindToEntriesTable:" id="RcI-Kv-d5P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityTextField" destination="kNG-kC-kJv" id="cCd-zV-d1G"/>
+                        <outlet property="birdImage" destination="utC-CG-joq" id="7aT-hy-UfB"/>
+                        <outlet property="boxNumberTextField" destination="LJl-kD-1VI" id="Pgl-Gw-2XN"/>
+                        <outlet property="eggsTextField" destination="Xak-1o-0m5" id="DJG-59-WyU"/>
+                        <outlet property="nestTextField" destination="WKA-Xc-A7N" id="lBX-LP-N1a"/>
+                        <outlet property="nestlingsTextField" destination="XHL-LM-ptA" id="c3h-Oi-5TE"/>
+                        <outlet property="speciesTextView" destination="98Q-fX-g9i" id="tfn-F7-Pmo"/>
+                        <segue destination="bnB-35-6Kd" kind="show" identifier="goToBirdList" id="Bad-7Z-6AK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lco-88-8Rl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7zE-yS-0jg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5000.8000000000002" y="-787.55622188905556"/>
+        </scene>
+        <!--Birds-->
+        <scene sceneID="V4r-kb-Xdf">
+            <objects>
+                <tableViewController id="bnB-35-6Kd" customClass="BirdListTableViewController" customModule="Plainsboro_Birdwatch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wxd-db-Hex">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BirdListTableViewCell" rowHeight="120" id="MPn-tV-eNk" customClass="BirdListTableViewCell" customModule="Plainsboro_Birdwatch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MPn-tV-eNk" id="f1Y-ex-EVe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bird" translatesAutoresizingMaskIntoConstraints="NO" id="Tlc-h0-r13">
+                                            <rect key="frame" x="16" y="14" width="103" height="95"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="95" id="mxA-25-Mpw"/>
+                                                <constraint firstAttribute="width" constant="103" id="wB5-VW-3ht"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eastern Bluebird" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uma-Q6-4pT">
+                                            <rect key="frame" x="127" y="11" width="248" height="32"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The bluebird is a message that should not appear. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qQ-nd-56b">
+                                            <rect key="frame" x="127" y="34" width="248" height="86"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Uma-Q6-4pT" secondAttribute="trailing" id="BBS-Ki-58n"/>
+                                        <constraint firstItem="2qQ-nd-56b" firstAttribute="leading" secondItem="Tlc-h0-r13" secondAttribute="trailing" constant="8" id="Gd6-G6-B1I"/>
+                                        <constraint firstItem="2qQ-nd-56b" firstAttribute="top" secondItem="f1Y-ex-EVe" secondAttribute="topMargin" constant="23" id="KHr-Sl-Vi2"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2qQ-nd-56b" secondAttribute="trailing" constant="-16" id="S9C-sb-ldB"/>
+                                        <constraint firstItem="2qQ-nd-56b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Uma-Q6-4pT" secondAttribute="leading" id="WDq-aH-9th"/>
+                                        <constraint firstItem="Tlc-h0-r13" firstAttribute="leading" secondItem="f1Y-ex-EVe" secondAttribute="leadingMargin" id="pL2-MR-YRh"/>
+                                        <constraint firstItem="Tlc-h0-r13" firstAttribute="bottom" secondItem="f1Y-ex-EVe" secondAttribute="bottomMargin" id="sYt-lJ-MjR"/>
+                                        <constraint firstItem="Tlc-h0-r13" firstAttribute="top" secondItem="Uma-Q6-4pT" secondAttribute="top" constant="3" id="v95-GF-K7z"/>
+                                        <constraint firstItem="Tlc-h0-r13" firstAttribute="bottom" secondItem="2qQ-nd-56b" secondAttribute="bottom" constant="-11" id="vMG-1m-dZ8"/>
+                                        <constraint firstItem="Tlc-h0-r13" firstAttribute="top" secondItem="f1Y-ex-EVe" secondAttribute="topMargin" constant="3" id="xbb-Hb-D4t"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="birdDescription" destination="2qQ-nd-56b" id="uvr-Co-uyW"/>
+                                    <outlet property="birdImage" destination="Tlc-h0-r13" id="zkF-UD-4Xj"/>
+                                    <outlet property="birdNameLabel" destination="Uma-Q6-4pT" id="xDk-Nr-RZD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bnB-35-6Kd" id="tlH-ha-1cw"/>
+                            <outlet property="delegate" destination="bnB-35-6Kd" id="Ba7-76-yfS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Birds" id="etj-wj-0TR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Osi-dn-4uB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5728.8000000000002" y="-786.65667166416802"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Bird" width="1494" height="981"/>
         <image name="HomeIcon" width="25" height="25"/>
         <image name="LogIcon" width="25" height="25"/>
         <image name="SettingsIcon" width="25" height="25"/>
         <image name="clear" width="50" height="50"/>
+        <image name="search" width="75" height="75"/>
         <image name="thermometer" width="120" height="120"/>
         <image name="wind" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ckv-ov-44o"/>
+        <segue reference="BGR-Vv-d6t"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.10291796177625656" green="0.23578894138336182" blue="0.19999688863754272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

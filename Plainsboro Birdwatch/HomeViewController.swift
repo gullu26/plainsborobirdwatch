@@ -18,6 +18,7 @@ let db = Firestore.firestore();
 let WIND_TAG = 0
 let CONDITION_TAG = 1
 
+
 var windPicker =  UIPickerView()
 var conditionPicker =  UIPickerView()
 
@@ -40,11 +41,26 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var conditionText: UITextField!
     
-    @IBOutlet weak var letsGoButton: UIButton!
+
     
     @IBOutlet weak var unitsText: UITextView!
     
     @IBOutlet weak var conditionImage: UIImageView!
+    
+    
+    @IBAction func letsGo(_ sender: Any)
+    {
+        performSegue(withIdentifier: "segue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let secondController = segue.destination as! CreateEntriesTableViewController
+        secondController.date = dateText.text!
+        secondController.tempInFahrenheit = Int(tempText.text!) ?? 0
+        secondController.wind = windText.text!
+        secondController.condition = conditionText.text!
+    }
     
     
     override func viewDidLoad() {
